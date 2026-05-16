@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bio Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* фон */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 20, 0.55);
+  z-index: -1;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* карточка */
+.card {
+  width: 340px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  background: rgba(10, 12, 25, 0.55);
+  box-shadow: 0 0 50px rgba(80, 120, 255, 0.15);
+  text-align: center;
+}
+
+/* 🖼 КАРТИНКА НАД НИКОМ */
+.top-gif {
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  opacity: 0.95;
+}
+
+/* аватар */
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(120, 160, 255, 0.35);
+  margin-bottom: 12px;
+}
+
+/* ник */
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #cfe3ff;
+  text-shadow:
+    0 0 6px #4da3ff,
+    0 0 14px #6b5bff,
+    0 0 28px #3b7bff;
+}
+
+/* био */
+.bio {
+  font-size: 14px;
+  color: #b8c7ff;
+  margin: 8px 0 20px;
+}
+
+/* иконки */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  padding: 8px;
+  background: rgba(80, 120, 255, 0.12);
+  border: 1px solid rgba(120, 160, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+  background: rgba(90, 140, 255, 0.22);
+  border: 1px solid rgba(120, 160, 255, 0.4);
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* появление */
+.card {
+  animation: fadeIn 0.8s ease;
+}
+
+* {
+                      cursor: url(https://r2.guns.lol/c6c3ed7d-9160-46a2-85f6-a6745631e6d2.png) 16 16, auto !important;
+                    }
+                    </style><style>
+                ::-moz-selection {
+                    background: #ffffff;
+                    color: #f8f9fa;
+                }
+                ::selection {
+                    background: #ffffff;
+                    color: #f8f9fa;
+                }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- фон -->
+<img class="bg" src="https://i.pinimg.com/originals/41/0b/71/410b7154bc2db62da8d5b2cd310f470a.gif">
+<div class="overlay"></div>
+
+<div class="card">
+
+  <!-- 🖼 КАРТИНКА НАД НИКОМ -->
+  <img class="top-gif" src="https://i.pinimg.com/originals/7e/ce/18/7ece180033267e520004d62338ab85c4.gif">
+
+  <h1>helcart</h1>
+  <div class="bio">discord: hl0e</div>
+
+  <div class="icons">
+
+    <!-- Discord (заменённая иконка) -->
+    <a class="icon" href="https://discord.gg/ckzgGGsuYh" target="_blank">
+      <img src="https://i.ibb.co/4wLbZ5CJ/photo-2026-04-22-23-36-51-2.jpg" alt="Discord">
+    </a>
+
+    <!-- Telegram -->
+    <a class="icon" href="https://t.me/Macrohedged" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+    </a>
+
+    <!-- Telegram GIF -->
+    <a class="icon" href="https://t.me/helcarts" target="_blank">
+      <img src="https://i.pinimg.com/originals/41/80/f6/4180f6bcba93991509a473475a0687f4.gif">
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
